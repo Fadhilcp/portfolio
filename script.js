@@ -6,25 +6,33 @@ document.getElementById("form").addEventListener("submit",(e)=>{
     var name=document.getElementById("name").value
     var email=document.getElementById("email").value
     var msg=document.getElementById("message").value
+    var message = document.getElementById("msg")
    
     
      if(name.trim() == ""){
-       alert("add name")
+      console.log("hello")
+      //  alert("add name")
+      message.innerHTML = "name is required"
        return false
      }
      if(email.trim() == ""){
-        alert("Add Email")
+        // alert("Add Email")
+      message.innerHTML = "email is required"
+
         return false
      }
      if(msg.trim() == ""){
-        alert("Add Message")
+        // alert("Add Message")
+      message.innerHTML = "message is required"
+
         return false
      }
 
         var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if(!emailPattern.test(email)){
-           alert("Please enter a valid email")
+          //  alert("Please enter a valid email")
+           message.innerHTML = "Please enter a valid email"
            return false
         }
       
@@ -57,6 +65,6 @@ document.getElementById("form").addEventListener("submit",(e)=>{
               console.log(error);
               result.innerHTML = "Something went wrong!";
             })
-    
+
 })
 

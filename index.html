@@ -368,6 +368,7 @@
      <section class="s-journal" id="contact" style="padding-top: 20px;">
         <div class="container">
             <h1 style="text-align: center;">Get in Touch</h1>
+            
             <div class="contact-row">
                 <div class="contact-col">
                     <div class="contact-details">
@@ -388,15 +389,19 @@
                 <div class="col">
                     <div class="connect-me" >
                         <!-- Contact Form -->
+                       
                         <form action="https://api.web3forms.com/submit" method="POST" id="form">
                             <div class="row">
-                                
+                                <span style="color:rgb(142, 0, 0); margin-left: 180px;" id="msg"></span>
                                 <input type="hidden" name="access_key" value="3993f9fd-8079-47de-b714-5adad78d296c">
+                                
                                 <input type="text" name="name"  id="name" placeholder="Your Name" class="col input-tag">
+                               
                                 <input type="email" name="email"  id="email" placeholder="Your Email Address" class="col input-tag">
+                                
                                 <textarea name="message" id="message" style="width: 100%; margin-top: 2px;min-height: 180px; font-size: 20px;
                                 padding: 20px;" placeholder="Message...."></textarea>
-                                <input type="submit" value="Submit" id="submit-btn">
+                                <input type="submit" value="Submit" id="submit-btn" >
                             </div>
                             <p id="result" ></p>
                         </form>
