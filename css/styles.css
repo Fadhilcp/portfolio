@@ -4852,3 +4852,13 @@ td:last-child {
 #msg{
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+@media screen and (min-width: 576px){
+	#msg{
+		margin-left: 180px;
+	}
+}  
+@media screen and (max-width: 576px){
+	#msg{
+		margin-left: 80px;
+	}
+}  
